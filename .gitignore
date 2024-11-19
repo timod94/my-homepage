@@ -10,9 +10,6 @@
 .DS_Store
 Thumbs.db
 
-# testing
-/coverage
-
 # production
 /build
 
@@ -20,6 +17,7 @@ Thumbs.db
 
 .env
 
+/test.js*
 
 # misc
 .DS_Store
