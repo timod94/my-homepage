@@ -65,7 +65,7 @@ function About() {
     ]
 //########################### CSS inlineStyle ##################################
     const aboutStyle = {
-        padding: '60px 20px',
+        padding: '20px 20px',
         fontFamily: 'Roboto, sans-serif',
         textAlign: 'center',
         color: '#333',
@@ -124,7 +124,7 @@ function About() {
     };
 
     const tabStyle = (isActive) => ({
-        padding: '10px 20px',
+        padding: '20px 20px',
         cursor: 'pointer',
         borderBottom: isActive ? '3px solid #e67e22' : '3px solid transparent',
         color: isActive ? '#e67e22' : '#333',
@@ -155,11 +155,11 @@ function About() {
     return (
         <div style={aboutStyle}>
             <p style={headingStyle}>
-                Hi, ich bin Timo Dorst.
+                Hallo, ich bin Timo Dorst.
             </p>
             <p style={paragraphStyle}>
-                Ich bin {age} Jahre alt und komme aus Gelsenkirchen.<br/>
-                Aktuell befinde ich mich in einer Schulung mit dem Berufziel <br/>&#123;DevOps- und Cloud-Computing-Ingeniuer&#125;<br/> und habe bereits erste eigene Projekte realisiert.<br/> 
+                Ich bin {age} Jahre alt und komme aus Gelsenkirchen.
+                Aktuell befinde ich mich in einer Schulung mit dem Berufziel &#123; 'DevOps- und Cloud Computing Engineer' &#125; und habe bereits erste eigene Projekte realisiert. 
                 Mit Begeisterung lerne ich ständig neue Technologien und erweitere mein Wissen.
             </p>
 

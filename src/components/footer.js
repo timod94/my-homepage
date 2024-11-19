@@ -16,7 +16,7 @@ function Footer() {
     return (
         <footer style={footerStyle}>
         
-            <a href="#top" style={{ color: '#0077b5', textDecoration: 'none', fontWeight: 'bold' }}>
+            <a href="#top" style={{ color: '#e67e22', textDecoration: 'none', fontWeight: 'bold' }}>
                 Nach oben
                 </a>
 
