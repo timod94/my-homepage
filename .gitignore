@@ -2,14 +2,24 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
+
+#Build 
+/build
+
+# System files
+.DS_Store
+Thumbs.db
 
 # testing
 /coverage
 
 # production
 /build
+
+/.npm
+
+.env
+
 
 # misc
 .DS_Store
@@ -18,6 +28,11 @@
 .env.test.local
 .env.production.local
 
+# Log-files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# IDE/Editor folders
+.vscode/
+.idea/
