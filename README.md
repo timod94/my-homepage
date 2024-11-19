@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Meine persönliche Webseite
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Willkommen auf meiner persönlichen Webseite! Hier findest du Informationen über mich, meine Fähigkeiten und Projekte. Diese Webseite wurde mit React erstellt und nutzt moderne Webtechnologien, um dir einen Einblick in meine Arbeit und meine Reise als Entwickler zu geben.
 
-## Available Scripts
+## Inhaltsverzeichnis
 
-In the project directory, you can run:
+- [Über mich](#über-mich)
+- [Meine IT-Kenntnisse](#meine-it-kenntnisse)
+- [Projekte](#projekte)
+- [Kontakt](#kontakt)
 
-### `npm start`
+## Über mich
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ich bin Timo Dorst, ein leidenschaftlicher Entwickler aus Gelsenkirchen. Derzeit absolviere ich eine Schulung zum Cloud- und Web-Developer, in der ich meine Fähigkeiten im Umgang mit modernen Webtechnologien und Cloud-Services erweitere. Auf dieser Webseite teile ich mehr über mich, mein Alter, meine Schulung und meine Interessen.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Meine IT-Kenntnisse
 
-### `npm test`
+Auf dieser Webseite findest du eine Übersicht meiner **IT-Kenntnisse**, die in die folgenden Kategorien unterteilt sind:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend-Entwicklung:** HTML, CSS, JavaScript, React
+- **Backend-Entwicklung:** Node.js, Python
+- **DevOps:** Grafana, Prometheus, Loki
+- **AWS-Dienste:** Lambda, EC2, S3, IAM, CloudWatch, VPC
 
-### `npm run build`
+Ich lerne ständig neue Technologien und entwickle praktische Fähigkeiten durch Projekte.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Projekte
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Du kannst meine Projekte auf **GitHub** finden. Dort lade ich regelmäßig meine Arbeiten hoch, um mein Wissen und meine Fähigkeiten zu demonstrieren. Hier ist der Link zu meinem GitHub-Profil:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Mein GitHub-Profil](https://github.com/timod94?tab=repositories)
 
-### `npm run eject`
+## Kontakt
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Falls du Fragen hast oder mit mir zusammenarbeiten möchtest, zögere nicht, mich zu kontaktieren. Du findest meine Kontaktinformationen auf meiner LinkedIn-Seite oder schreib mir direkt eine Nachricht auf GitHub!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologie-Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Diese Webseite wurde mit den folgenden Technologien erstellt:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React** – Für den Aufbau der interaktiven Benutzeroberfläche
+- **React-Router** – Für die Navigation zwischen den Seiten
+- **CSS** – Für das Styling der Webseite
+- **AWS (Amazon Web Services)** – Um eine skalierbare und zuverlässige Infrastruktur zu bieten (optional, falls du damit arbeitest)
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Um die Webseite lokal auszuführen, kannst du folgende Schritte durchführen:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Klone das Repository:
+   ```bash
+   git clone https://github.com/dein-username/dein-repository.git
