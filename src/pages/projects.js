@@ -53,6 +53,7 @@ function Projects() {
 
   const projectContainerStyle = {
     display: 'flex',
+    flexDirection: 'column',
     justifyContent: 'flex-start',  // Bilder werden an den Anfang gesetzt
     gap: '5px',  // Kleiner Abstand zwischen den Bildern
     flexWrap: 'wrap',
@@ -68,7 +69,6 @@ function Projects() {
   const imageStyle = {
     maxWidth: '100%',
     height: 'auto',
-    maxHeight: '300px',
     cursor: 'pointer',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
