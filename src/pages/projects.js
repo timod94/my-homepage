@@ -140,7 +140,7 @@ function Projects() {
     color: '#111111',
     textAlign: 'center',
     maxWidth: '800px',
-    margin: '20px auto'
+    margin: '10px auto'
   };
 
   const linkStyle = {
@@ -155,9 +155,11 @@ function Projects() {
   };
 
   const describeblockStyle = {
-    textAlign: 'center',
-    color: '111111',
-    fontSize: '0.95rem'
+    fontSize: '1.1rem',
+    color: '#111111',
+    lineHeight: '1.3',
+    maxWidth: '500px',
+    margin: '20px auto',
   }
 
   return (

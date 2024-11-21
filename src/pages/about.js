@@ -66,7 +66,7 @@ function About() {
 //########################### CSS inlineStyle ##################################
     const aboutStyle = {
         padding: '20px 20px',
-        fontFamily: 'Roboto, sans-serif',
+        fontFamily: 'Georgia, sans-serif',
         textAlign: 'center',
         color: '#333',
         lineHeight: '1.8',
@@ -80,7 +80,7 @@ function About() {
 
     const paragraphStyle = {
         fontSize: '1.2rem',
-        color: '#666',
+        color: '#111111',
         lineHeight: '1.7',
         maxWidth: '800px',
         margin: '0 auto',
