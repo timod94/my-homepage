@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Projects() {
  
   const images = [
-    "/images/Screenshot1.jpg",
-    "/images/Screenshot2.png",
-    "images/Screenshot3.png"
+    "/images/Screenshot_login.png",
+    "/images/Screenshot_register.jpg",
+    "images/Screenshot_mainpage.png"
   ];
 
   
@@ -41,7 +41,8 @@ function Projects() {
     backgroundColor: 'transparent',
     borderRadius: '8px',
     boxShadow: 'none',
-    fontFamily: 'Georgia'
+    fontFamily: 'Georgia',
+
   };
 
   const headingStyle = {
@@ -53,23 +54,22 @@ function Projects() {
 
   const projectContainerStyle = {
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'flex-start',  // Bilder werden an den Anfang gesetzt
-    gap: '5px',  // Kleiner Abstand zwischen den Bildern
+    // Kleiner Abstand zwischen den Bildern
     flexWrap: 'wrap',
     marginBottom: '20px'
   };
   
 
   const projectStyle = {
-    width: '43%',
+    width: '30%',
     textAlign: 'center'
   };
 
   const imageStyle = {
     maxWidth: '100%',
     height: 'auto',
-    maxHeight: '300px',
+    maxHeight: '200px',
     cursor: 'pointer',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
@@ -140,50 +140,58 @@ function Projects() {
     color: '#111111',
     textAlign: 'center',
     maxWidth: '800px',
-    margin: '0 auto'
+    margin: '20px auto'
   };
 
   const linkStyle = {
     color: '#f39c12', // gelb
     textDecoration: 'none',
     fontWeight: 'bold',
-    transition: 'color 0.3s ease'
+    transition: 'color 0.3s ease',
   };
 
   const linkHoverStyle = {
     color: '#e67e22' // orange
   };
 
+  const describeblockStyle = {
+    textAlign: 'center',
+    color: '111111',
+    fontSize: '0.95rem'
+  }
+
   return (
     <section style={sectionStyle}>
       <h2 style={headingStyle}>SnuggleBuddy</h2>
+      <p style={describeblockStyle}>Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/><br/>
+        Das Spiel ist über eine Web-App spielbar und basiert auf JavaScript, HTML, CSS sowie Node.js.</p>
 
       <div style={projectContainerStyle}>
         <div style={projectStyle}>
-          <h2>/register</h2>
+          <h2>Code-Element vom Login</h2>
           <img
-            src="/images/Screenshot3.jpg"
+            src="/images/Screenshot_login.png"
             alt="SnuggleBuddy"
             style={imageStyle}
             onClick={() => openModal(0)} 
           />
         </div>
         <div style={projectStyle}>
-          <h2>/mainpage</h2>
+          <h2>/register</h2>
           <img
-            src="/images/Screenshot1.png"
+            src="/images/Screenshot_register.jpg"
             alt="SnuggleBuddy"
             style={imageStyle}
             onClick={() => openModal(1)} 
           />
         </div>
         <div style={projectStyle}>
-          <h2>Login - Code Ausschnitt</h2>
+          <h2>/mainpage</h2>
           <img
-            src="/images/Screenshot2.png"
+            src="/images/Screenshot_mainpage.png"
             alt="SnuggleBuddy"
             style={imageStyle}
-            onClick={() => openModal(1)} 
+            onClick={() => openModal(2)} 
           />
         </div>
       </div>
@@ -227,7 +235,7 @@ function Projects() {
           </div>
         </div>
       )}
-
+<br/><br/>
       {/* GitHub-Link */}
       <p style={paragraphStyle}>
         Du findest meine Projekte auf GitHub: {''}
