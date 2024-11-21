@@ -49,21 +49,20 @@ function Projects() {
     fontSize: '2rem',
     color: '#111111',
     textAlign: 'center',
-    marginBottom: '20px'
+    marginBottom: '20px',
   };
 
   const projectContainerStyle = {
     display: 'flex',
     justifyContent: 'flex-start',  // Bilder werden an den Anfang gesetzt
-    // Kleiner Abstand zwischen den Bildern
     flexWrap: 'wrap',
-    marginBottom: '20px'
+    marginBottom: '20px',
   };
   
 
   const projectStyle = {
     width: '30%',
-    textAlign: 'center'
+    textAlign: 'center',
   };
 
   const imageStyle = {
@@ -72,7 +71,7 @@ function Projects() {
     maxHeight: '200px',
     cursor: 'pointer',
     borderRadius: '8px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   };
 
   // Modal-Style
@@ -87,20 +86,20 @@ function Projects() {
     zIndex: 1000, // Damit das Modal oben angezeigt wird
     justifyContent: 'center',
     alignItems: 'center',
-    display: 'flex'
+    display: 'flex',
   };
 
   const modalContentStyle = {
     position: 'relative',
     maxWidth: '90%',
     maxHeight: '90%',
-    textAlign: 'center'
+    textAlign: 'center',
   };
 
   const modalImageStyle = {
     width: '100%',
     height: 'auto',
-    borderRadius: '8px'
+    borderRadius: '8px',
   };
 
   const buttonStyle = {
@@ -112,15 +111,15 @@ function Projects() {
     border: 'none',
     padding: '10px',
     cursor: 'pointer',
-    zIndex: 1001
+    zIndex: 1001,
   };
 
   const prevButtonStyle = {
-    left: '10px'
+    left: '10px',
   };
 
   const nextButtonStyle = {
-    right: '10px'
+    right: '10px',
   };
 
   const closeButtonStyle = {
@@ -132,7 +131,7 @@ function Projects() {
     border: 'none',
     fontSize: '24px',
     cursor: 'pointer',
-    zIndex: 1001
+    zIndex: 1001,
   };
 
   const paragraphStyle = {
@@ -140,7 +139,7 @@ function Projects() {
     color: '#111111',
     textAlign: 'center',
     maxWidth: '800px',
-    margin: '10px auto'
+    margin: '10px auto',
   };
 
   const linkStyle = {
@@ -151,21 +150,23 @@ function Projects() {
   };
 
   const linkHoverStyle = {
-    color: '#e67e22' // orange
+    color: '#e67e22', // orange
   };
 
   const describeblockStyle = {
-    fontSize: '1.1rem',
+    textAlign: 'center',
+    fontSize: '1rem',
     color: '#111111',
-    lineHeight: '1.3',
-    maxWidth: '500px',
-    margin: '20px auto',
+    lineHeight: '1.7',
+    maxWidth: '600px',
+    margin: '0 auto',
+    marginBottom: '80px',
   }
 
   return (
     <section style={sectionStyle}>
       <h2 style={headingStyle}>SnuggleBuddy</h2>
-      <p style={describeblockStyle}>Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/><br/>
+      <p style={describeblockStyle}>Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/>
         Das Spiel ist über eine Web-App spielbar und basiert auf JavaScript, HTML, CSS sowie Node.js.</p>
 
       <div style={projectContainerStyle}>

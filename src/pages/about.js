@@ -59,27 +59,26 @@ function About() {
     const gitSkills = [
         "GitFlow Verzweigungsstrategie",
         "Pull-Anfragen & Code-Überprüfungen",
-        "Versionskontrolle mit Git",
+         "Versionskontrolle mit Git",
         "Zusammenarbeit mit GitHub",
         "GitHub Actions für CI/CD"
     ]
 //########################### CSS inlineStyle ##################################
     const aboutStyle = {
         padding: '20px 20px',
-        fontFamily: 'Georgia, sans-serif',
         textAlign: 'center',
-        color: '#333',
+        color: '#111111',
         lineHeight: '1.8',
     };
 
     const headingStyle = {
         fontSize: '2.5rem',
         color: '#111111', 
-        marginBottom: '20px',
+        marginBottom: '40px',
     };
 
     const paragraphStyle = {
-        fontSize: '1.2rem',
+        fontSize: '1rem',
         color: '#111111',
         lineHeight: '1.7',
         maxWidth: '800px',
@@ -88,23 +87,23 @@ function About() {
 
     const linkedinButtonStyle = {
         display: 'inline-block',
-        color: isLinkedInHovered ? '#0077b5' : '#333', // LinkedIn-Farbe
+        color: isLinkedInHovered ? '#0077b5' : '#111111', // LinkedIn-Farbe
         textDecoration: 'none',
         fontSize: '1.1rem',
         fontWeight: 'bold',
         padding: '10px 20px',
-        border: `2px solid ${isLinkedInHovered ? '#0077b5' : '#333'}`,
+        border: `2px solid ${isLinkedInHovered ? '#0077b5' : '#111111'}`,
         borderRadius: '30px',
         marginRight: '10px',
         transition: 'color 0.3s ease, border-color 0.3s ease',
     };
 
     const contactLinkStyle = {
-        color: isEmailHovered ? '#e67e22' : '#333',
+        color: isEmailHovered ? '#e67e22' : '#111111',
         textDecoration: 'none',
         fontWeight: 'bold',
         padding: '10px 20px',
-        border: `2px solid ${isEmailHovered ? '#e67e22' : '#333'}`,
+        border: `2px solid ${isEmailHovered ? '#e67e22' : '#111111'}`,
         borderRadius: '30px',
         transition: 'color 0.3s ease, border-color 0.3s ease',
     };
@@ -127,7 +126,7 @@ function About() {
         padding: '20px 20px',
         cursor: 'pointer',
         borderBottom: isActive ? '3px solid #e67e22' : '3px solid transparent',
-        color: isActive ? '#e67e22' : '#333',
+        color: isActive ? '#e67e22' : '#111111',
         fontWeight: 'bold',
         transition: 'color 0.3s ease, border-bottom 0.3s ease',
         display: 'flex',
@@ -163,7 +162,7 @@ function About() {
                 Mit Begeisterung lerne ich ständig neue Technologien und erweitere mein Wissen.
             </p>
 
-            <h1 style={{ textAlign: 'center', fontSize: '2rem' }}>Meine Skills</h1>
+            <h1 style={{ textAlign: 'center', fontSize: '2rem', marginTop: '100px' }}>Meine Skills</h1>
 
            {/* Tab Menü */}
            <div style={tabMenuStyle}>
