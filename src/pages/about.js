@@ -208,12 +208,12 @@ function About() {
                 </a>
                 <span style={{ margin: '0 15px', color: '#666' }}>|</span>
                 <a
-                    href="mailto:dorstt94@mail.com"
+                    href="mailto:dorstt94@gmail.com"
                     style={contactLinkStyle}
                     onMouseEnter={() => setIsEmailHovered(true)}
                     onMouseLeave={() => setIsEmailHovered(false)}
                 >
-                    Oder schreib mir direkt: dorstt94@mail.com
+                    Oder schreib mir direkt: dorstt94@gmail.com
                 </a>
             </div>
         </div>

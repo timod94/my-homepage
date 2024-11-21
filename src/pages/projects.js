@@ -4,7 +4,8 @@ function Projects() {
  
   const images = [
     "/images/Screenshot1.jpg",
-    "/images/Screenshot2.png"
+    "/images/Screenshot2.png",
+    "images/Screenshot3.png"
   ];
 
   
@@ -170,6 +171,15 @@ function Projects() {
           <h2>/mainpage</h2>
           <img
             src="/images/Screenshot2.png"
+            alt="SnuggleBuddy"
+            style={imageStyle}
+            onClick={() => openModal(1)} 
+          />
+        </div>
+        <div style={projectStyle}>
+          <h2>Login - Code Ausschnitt</h2>
+          <img
+            src="/images/Screenshot3.png"
             alt="SnuggleBuddy"
             style={imageStyle}
             onClick={() => openModal(1)} 
