@@ -69,6 +69,7 @@ function Projects() {
   const imageStyle = {
     maxWidth: '100%',
     height: 'auto',
+    maxHeight: '300px',
     cursor: 'pointer',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
@@ -161,7 +162,7 @@ function Projects() {
         <div style={projectStyle}>
           <h2>/register</h2>
           <img
-            src="/images/Screenshot1.jpg"
+            src="/images/Screenshot3.jpg"
             alt="SnuggleBuddy"
             style={imageStyle}
             onClick={() => openModal(0)} 
@@ -170,7 +171,7 @@ function Projects() {
         <div style={projectStyle}>
           <h2>/mainpage</h2>
           <img
-            src="/images/Screenshot2.png"
+            src="/images/Screenshot1.png"
             alt="SnuggleBuddy"
             style={imageStyle}
             onClick={() => openModal(1)} 
@@ -179,7 +180,7 @@ function Projects() {
         <div style={projectStyle}>
           <h2>Login - Code Ausschnitt</h2>
           <img
-            src="/images/Screenshot3.png"
+            src="/images/Screenshot2.png"
             alt="SnuggleBuddy"
             style={imageStyle}
             onClick={() => openModal(1)} 
