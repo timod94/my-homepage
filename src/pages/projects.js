@@ -155,7 +155,7 @@ function Projects() {
 
   const describeblockStyle = {
     textAlign: 'center',
-    fontSize: '1rem',
+    fontSize: '1.2rem',
     color: '#111111',
     lineHeight: '1.7',
     maxWidth: '600px',

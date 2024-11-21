@@ -37,7 +37,7 @@ const DynamicBackground = () => {
         ctx.beginPath();
         ctx.moveTo(this.x, this.y);
         ctx.lineTo(endX, endY);
-        ctx.strokeStyle = `rgba(150, 150, 150, ${this.alpha})`;  // Dunkles Grau
+        ctx.strokeStyle = `rgba(160, 160, 160, ${this.alpha})`;// Linien Farbe - hellgrau
         ctx.lineWidth = 2;
         ctx.stroke();
       }

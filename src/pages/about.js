@@ -54,14 +54,15 @@ function About() {
           'S3',
            'IAM',
             'CloudWatch',
-             'VPC'];
+             'VPC',
+                'AWS Amplify'];
 
     const gitSkills = [
         "GitFlow Verzweigungsstrategie",
-        "Pull-Anfragen & Code-Überprüfungen",
-         "Versionskontrolle mit Git",
-        "Zusammenarbeit mit GitHub",
-        "GitHub Actions für CI/CD"
+            "Pull-Anfragen & Code-Überprüfungen",
+                "Versionskontrolle mit Git",
+                    "Zusammenarbeit mit GitHub",
+                        "GitHub Actions für CI/CD"
     ]
 //########################### CSS inlineStyle ##################################
     const aboutStyle = {
@@ -78,7 +79,7 @@ function About() {
     };
 
     const paragraphStyle = {
-        fontSize: '1rem',
+        fontSize: '1.2rem',
         color: '#111111',
         lineHeight: '1.7',
         maxWidth: '800px',
