@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './projects.css';
 
 function Projects() {
  
@@ -12,41 +13,39 @@ function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Funktion, um das Modal zu öffnen
   const openModal = (index) => {
     setCurrentImageIndex(index);
-    setModalOpen(true);
+    setModalOpen(true);//Modul öffnen
   };
 
   const closeModal = () => {
-    setModalOpen(false);
+    setModalOpen(false);//Modul schließen
   };
 
-  // Funktion, um zum vorherigen Bild zu wechseln
   const prevImage = () => {
     setCurrentImageIndex((prevIndex) => 
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
 
-  // Funktion, um zum nächsten Bild zu wechseln
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => 
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
+
   const sectionStyle = {
     padding: '50px',
     backgroundColor: 'transparent',
     borderRadius: '8px',
     boxShadow: 'none',
-    fontFamily: 'Georgia',
+    fontFamily: 'Georgia, serif',
 
   };
 
   const headingStyle = {
-    fontSize: '2rem',
+    fontSize: '2.2rem',
     color: '#111111',
     textAlign: 'center',
     marginBottom: '20px',
@@ -135,7 +134,7 @@ function Projects() {
   };
 
   const paragraphStyle = {
-    fontSize: '1.1rem',
+    fontSize: '1.2rem',
     color: '#111111',
     textAlign: 'center',
     maxWidth: '800px',
@@ -155,7 +154,7 @@ function Projects() {
 
   const describeblockStyle = {
     textAlign: 'center',
-    fontSize: '1.2rem',
+    fontSize: '1.3rem',
     color: '#111111',
     lineHeight: '1.7',
     maxWidth: '600px',
@@ -165,11 +164,11 @@ function Projects() {
 
   return (
     <section style={sectionStyle}>
-      <h2 style={headingStyle}>SnuggleBuddy</h2>
-      <p style={describeblockStyle}>Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/>
+      <h2 style={headingStyle} className="fadeIn">SnuggleBuddy</h2>
+      <p style={describeblockStyle} className="fadeIn">Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/>
         Das Spiel ist über eine Web-App spielbar und basiert auf JavaScript, HTML, CSS sowie Node.js.</p>
 
-      <div style={projectContainerStyle}>
+      <div style={projectContainerStyle} className="fadeIn">
         <div style={projectStyle}>
           <h2>Code-Element vom Login</h2>
           <img

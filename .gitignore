@@ -31,3 +31,6 @@ __tests__/
 
 # Miscellaneous
 /.npm/
+
+# nohup
+nohup.out

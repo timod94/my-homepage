@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { FaLinkedin, FaHtml5,FaNodeJs, FaAws, FaGithub, FaTools } from 'react-icons/fa';
+import { FaLinkedin, FaHtml5, FaNodeJs, FaAws, FaGithub, FaTools } from 'react-icons/fa';
+import './about.css'
 
 function About() {
+    const [activeTab, setActiveTab] = useState('Frontend');
 
-    const [activeTab, setActiveTab] = useState('Frontend')
-   
-
-    //Tab-Inhalt
+    // Tab-Inhalt
     const renderSkills = (skills) => (
         <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
             {skills.map((skill, index) => (
@@ -14,6 +13,7 @@ function About() {
             ))}
         </ul>
     );
+
     // Logik zur Berechnung des aktuellen Alters
     const birthDate = new Date('1994-10-23');
     const currentDate = new Date();
@@ -28,43 +28,24 @@ function About() {
     const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
     const [isEmailHovered, setIsEmailHovered] = useState(false);
 
-    {/* Skills */}
+    // Skills
     const frontendSkills = [
-        'HTML',
-         'CSS',
-          'JavaScript',
-           'React'
-        ];
+        'HTML', 'CSS', 'JavaScript', 'React'
+    ];
     const backendSkills = [
-        'Node.js',
-         'Python',
-          'Express.js',
-           'REST-APIs'
-        ];
+        'Node.js', 'Python', 'Express.js', 'REST-APIs'
+    ];
     const devOpsSkills = [
-        'Grafana',
-         'Prometheus',
-          'Loki',
-           'Promtail',
-            'Node-Exporter'];
-
+        'Grafana', 'Prometheus', 'Loki', 'Promtail', 'Node-Exporter'
+    ];
     const awsServices = [
-        'AWS Lambda',
-         'EC2',
-          'S3',
-           'IAM',
-            'CloudWatch',
-             'VPC',
-                'AWS Amplify'];
-
+        'AWS Lambda', 'EC2', 'S3', 'IAM', 'CloudWatch', 'VPC', 'AWS Amplify'
+    ];
     const gitSkills = [
-        "GitFlow Verzweigungsstrategie",
-            "Pull-Anfragen & Code-Überprüfungen",
-                "Versionskontrolle mit Git",
-                    "Zusammenarbeit mit GitHub",
-                        "GitHub Actions für CI/CD"
-    ]
-//########################### CSS inlineStyle ##################################
+        "GitFlow Verzweigungsstrategie", "Pull-Anfragen & Code-Überprüfungen", "Versionskontrolle mit Git", "Zusammenarbeit mit GitHub", "GitHub Actions für CI/CD"
+    ];
+
+    //########################### CSS inlineStyle ##################################
     const aboutStyle = {
         padding: '20px 20px',
         textAlign: 'center',
@@ -73,13 +54,13 @@ function About() {
     };
 
     const headingStyle = {
-        fontSize: '2.5rem',
-        color: '#111111', 
+        fontSize: '3rem',
+        color: '#111111',
         marginBottom: '40px',
     };
 
     const paragraphStyle = {
-        fontSize: '1.2rem',
+        fontSize: '1.3rem',
         color: '#111111',
         lineHeight: '1.7',
         maxWidth: '800px',
@@ -121,6 +102,7 @@ function About() {
         justifyContent: 'center',
         margin: '20px 0',
         gap: '15px',
+        flexWrap: 'wrap', // Allow wrapping on smaller screens
     };
 
     const tabStyle = (isActive) => ({
@@ -132,6 +114,8 @@ function About() {
         transition: 'color 0.3s ease, border-bottom 0.3s ease',
         display: 'flex',
         alignItems: 'center',
+        flex: '1 1 100px', // Make tabs flexible and allow them to adjust
+        justifyContent: 'center',
     });
 
     const iconStyle = {
@@ -143,14 +127,6 @@ function About() {
         textAlign: 'center',
         animation: 'fadeIn 0.5s ease-in-out',
     };
-
-    const fadeInStyle = {
-        '@keyframes fadeIn': {
-            from: { opacity: 0 },
-            to: { opacity: 1 },
-        }
-    };
-//###############################################################
 
     return (
         <div style={aboutStyle}>
@@ -165,8 +141,8 @@ function About() {
 
             <h1 style={{ textAlign: 'center', fontSize: '2rem', marginTop: '100px' }}>Meine Skills</h1>
 
-           {/* Tab Menü */}
-           <div style={tabMenuStyle}>
+            {/* Tab Menü */}
+            <div style={tabMenuStyle}>
                 <div style={tabStyle(activeTab === 'Frontend')} onClick={() => setActiveTab('Frontend')}>
                     <FaHtml5 style={iconStyle} /> Frontend
                 </div>
