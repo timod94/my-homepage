@@ -259,7 +259,7 @@ const contentStyle = {
       <h2 style={headingStyle} className="fadeIn">Projekte</h2>
       
 <br /><br />
-      <h3>SnuggleBuddy</h3>
+      <h2 style={headingStyle}>SnuggleBuddy</h2>
       <p style={describeblockStyle} className="fadeIn">Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/>
         Das Spiel ist über eine Web-App spielbar und basiert auf JavaScript, HTML, CSS sowie Node.js.</p>
 
