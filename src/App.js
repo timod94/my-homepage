@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import DynamicBackground from './components/dynamicBackground';
 import Header from './components/header';
 import Footer from './components/footer';
 import About from './pages/about';
@@ -13,7 +12,6 @@ function App() {
     <Router>
 
     <div id="top">
-      <DynamicBackground />
       <Header />
       <Routes>
 

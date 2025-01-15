@@ -77,7 +77,7 @@ function Header() {
                                 onMouseEnter={(e) => e.target.style.color = linkHoverStyle.color} 
                                 onMouseLeave={(e) => e.target.style.color = linkStyle.color}
                             >
-                                Projekte
+                                Projekte & Skills
                             </Link>
                         </li>
                     </ul>
