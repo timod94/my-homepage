@@ -224,6 +224,38 @@ const contentStyle = {
 
   return (
     <section style={sectionStyle}>
+
+<h1 style={{ textAlign: 'center', fontSize: '2rem', marginTop: '100px' }}>Meine Skills</h1>
+      {/* Tab Menü */}
+      <div style={tabMenuStyle}>
+                <div style={tabStyle(activeTab === 'Frontend')} onClick={() => setActiveTab('Frontend')}>
+                    <FaHtml5 style={iconStyle} /> Frontend
+                </div>
+                <div style={tabStyle(activeTab === 'Backend')} onClick={() => setActiveTab('Backend')}>
+                    <FaNodeJs style={iconStyle} /> Backend
+                </div>
+                <div style={tabStyle(activeTab === 'DevOps')} onClick={() => setActiveTab('DevOps')}>
+                    <FaTools style={iconStyle} /> DevOps
+                </div>
+                <div style={tabStyle(activeTab === 'AWS')} onClick={() => setActiveTab('AWS')}>
+                    <FaAws style={iconStyle} /> AWS-Dienste
+                </div>
+                <div style={tabStyle(activeTab === 'Git')} onClick={() => setActiveTab('Git')}>
+                    <FaGithub style={iconStyle} /> Git & GitHub
+                </div>
+            </div>
+
+            {/* Tab Inhalt */}
+            <div style={contentStyle}>
+                {activeTab === 'Frontend' && renderSkills(frontendSkills)}
+                {activeTab === 'Backend' && renderSkills(backendSkills)}
+                {activeTab === 'DevOps' && renderSkills(devOpsSkills)}
+                {activeTab === 'AWS' && renderSkills(awsServices)}
+                {activeTab === 'Git' && renderSkills(gitSkills)}
+            </div>
+
+<br/><br/>
+
       <h2 style={headingStyle} className="fadeIn">SnuggleBuddy</h2>
       <p style={describeblockStyle} className="fadeIn">Gemeinsam mit einem Team von fünf Leuten haben wir im Rahmen unserer Weiterbildung ein virtuelles Haustier-Spiel entwickelt.<br/>
         Das Spiel ist über eine Web-App spielbar und basiert auf JavaScript, HTML, CSS sowie Node.js.</p>
@@ -297,36 +329,7 @@ const contentStyle = {
           </div>
         </div>
       )}
-            <h1 style={{ textAlign: 'center', fontSize: '2rem', marginTop: '100px' }}>Meine Skills</h1>
-      {/* Tab Menü */}
-      <div style={tabMenuStyle}>
-                <div style={tabStyle(activeTab === 'Frontend')} onClick={() => setActiveTab('Frontend')}>
-                    <FaHtml5 style={iconStyle} /> Frontend
-                </div>
-                <div style={tabStyle(activeTab === 'Backend')} onClick={() => setActiveTab('Backend')}>
-                    <FaNodeJs style={iconStyle} /> Backend
-                </div>
-                <div style={tabStyle(activeTab === 'DevOps')} onClick={() => setActiveTab('DevOps')}>
-                    <FaTools style={iconStyle} /> DevOps
-                </div>
-                <div style={tabStyle(activeTab === 'AWS')} onClick={() => setActiveTab('AWS')}>
-                    <FaAws style={iconStyle} /> AWS-Dienste
-                </div>
-                <div style={tabStyle(activeTab === 'Git')} onClick={() => setActiveTab('Git')}>
-                    <FaGithub style={iconStyle} /> Git & GitHub
-                </div>
-            </div>
-
-            {/* Tab Inhalt */}
-            <div style={contentStyle}>
-                {activeTab === 'Frontend' && renderSkills(frontendSkills)}
-                {activeTab === 'Backend' && renderSkills(backendSkills)}
-                {activeTab === 'DevOps' && renderSkills(devOpsSkills)}
-                {activeTab === 'AWS' && renderSkills(awsServices)}
-                {activeTab === 'Git' && renderSkills(gitSkills)}
-            </div>
-
-<br/><br/>
+           
       {/* GitHub-Link */}
       <p style={paragraphStyle}>
         Du findest meine Projekte auf GitHub: {''}
